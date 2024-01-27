@@ -1,0 +1,96 @@
+/* Basic styles for the navbar and main content */
+#navbar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 20%;
+    height: 100vh;
+    padding: 20px;
+    overflow-y: auto;
+    text-wrap: nowrap;
+    background-color: #5f9ea0;
+}
+
+#navbar li {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+a{
+    text-decoration: none;
+    margin-left: -35px;
+}
+
+a:link{
+    color: #D9EAD3;
+}
+
+a:hover{
+    color: darkturquoise;
+}
+
+/* a:visited{
+    color: white;
+} */
+
+code {
+    background-color: #F8D1BE;
+    padding: 15px;
+    margin: 15px;
+    display: block;
+    text-align: left;
+    border-radius: 5px;
+    overflow-x: auto;
+    overflow-y: auto;
+    word-wrap: normal;
+    word-break: normal;
+    position: relative;
+    white-space: pre;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    
+}
+
+header{
+    text-align: left;
+    font-size: 1.5em;
+    font-weight: bold;
+    /* margin: 20px; */
+}
+
+#main-doc {
+    margin-left: 23%; /* Adjust for navbar width */
+    padding: 20px;
+    background-color: rgb(155, 181, 210);
+    color: rgb(46, 52, 57);
+}
+
+/* Media query to adjust for smaller screens */
+@media (max-width: 768px) {
+    #navbar {
+        position: static;
+        width: 93%;
+        height: 20%;
+        overflow-y: scroll;
+        max-height: 45vh;
+    }
+
+    #main-doc {
+        margin-left: 0;
+    }
+}
+::-webkit-scrollbar{
+    width: 10px;;
+    height: 10px;
+}
+::-webkit-scrollbar-track{
+    background: #D9EAD3;
+}
+::-webkit-scrollbar-thumb{
+    background: #4b9cd3;
+    height: 5px;
+    border-radius: 5px;
+}
